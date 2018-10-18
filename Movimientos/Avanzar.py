@@ -38,7 +38,7 @@ pwm_b.ChangeDutyCycle(100)
 
 # Wait five seconds
 try:
-    time.sleep(5)
+    time.sleep(0.5)
 
 # In case the user presses CTRL+C
 except KeyboardInterrupt:
