@@ -24,7 +24,7 @@ def izquierda():
 
 @app.route('/api/derecha')
 def Derecha():
-	commands.getuotput('python /home/pi/Robot/Movimientos/Derecha.py')
+	commands.getoutput('python /home/pi/Robot/Movimientos/Derecha.py')
 	return "El carro gira a la derecha de frente"
 
 #@app.route('/api/detener')
