@@ -19,18 +19,18 @@ def reversa():
 
 @app.route('/api/izquierda')
 def izquierda():
-	commands.getoutput('python /home/pi/Robot/Movimientos/IzquierdaAdelante.py')
+	commands.getoutput('python /home/pi/Robot/Movimientos/Izquierda.py')
 	return "El carro gira a la izquierda de frente"
 
 @app.route('/api/derecha')
 def Derecha():
-	commands.getuotput('python /home/pi/Robot/Movimientos/DerechaAdelante.py')
+	commands.getuotput('python /home/pi/Robot/Movimientos/Derecha.py')
 	return "El carro gira a la derecha de frente"
 
-@app.route('/api/detener')
-def detener():
-	commands.getoutput('python /home/pi/Robot/Movimientos/Detener.py')
-	return "El Carro se ha detenido"
+#@app.route('/api/detener')
+#def detener():
+#	commands.getoutput('python /home/pi/Robot/Movimientos/Detener.py')
+#	return "El Carro se ha detenido"
 
 
 if __name__ == '__main__':
